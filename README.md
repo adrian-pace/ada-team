@@ -2,6 +2,6 @@
 Github Repository for our team.
 
 Team members:
-Baligand Louis
-Pace Adrian 
-Schloesing Benjamin
+  - Baligand Louis
+  - Pace Adrian 
+  - Schloesing Benjamin
