@@ -1,5 +1,1 @@
-{::nomarkdown}
-
-<!-- HTML CODE-->
-<iframe src=' + url+ ' width=900 height=700></iframe>
-{:/}
+The notebook can be visualized at [Here](http://ptitpet.com/ada/index.html
