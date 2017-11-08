@@ -1,1 +1,1 @@
-<iframe src='http://ptitpet.com/webdav' width=900 height=700></iframe>
+<iframe src='http://ptitpet.com/ada/' width=900 height=700></iframe>
