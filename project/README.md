@@ -1,8 +1,7 @@
 # A spatio-temporal travel in the universe of music
 
 
-# THE SECOND MILESTONE IS ACCESSIBLE WITH LOADED MAP AT THIS ADDRESS :
-[html notebook](http://138.68.129.61/ada/project)
+# THE SECOND MILESTONE IS ACCESSIBLE WITH LOADED MAP AT THIS ADDRESS : [html notebook](http://138.68.129.61/ada/project)
 
 # Abstract
 How did music evolve through time and space ? We want to find influencers both in terms of individuals and countries that would shape the music worldmap, and what people listen to.  
