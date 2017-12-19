@@ -5,8 +5,8 @@ Have you ever wondered how did music evolve through time and space ? From the dr
 Our goal is to show you how music evolved through time between 1920 and 2010, and how each new music style spread through the world. What country has succeeded in influencing the others ? Who were the influencers ?   
 We will answer these questions by providing a interactive map to visualize many aspects of music around the world through time (proeminent genres per country). We will also study other aspects of music such as the kind of topics sung around the world and how they evolved through time.  
 This analysis aims to cast a new eye on the evolution of music through time and space. A data story as well as a the visualization of our analysis can be found on
-* datastory [ptitpet.com/ada-site](http://dindon.cool/ada-site)  
-* final notebook [ptitpet.com/ada/project](http://dindon.cool/ada/project)  
+* datastory [http://dindon.cool/ada-site](ptitpet.com/ada-site)  
+* final notebook [http://dindon.cool/ada/project](ptitpet.com/ada/project)  
 
 We will use the [Million songs dataset](https://labrosa.ee.columbia.edu/millionsong/).
 
