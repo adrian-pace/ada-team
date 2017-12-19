@@ -1,52 +1,33 @@
 # A spatio-temporal travel in the universe of music
 
-
-# THE SECOND MILESTONE IS ACCESSIBLE WITH LOADED MAP AT THIS ADDRESS : [html notebook](http://138.68.129.61/ada/project)
-
 # Abstract
-How did music evolve through time and space ? We want to find influencers both in terms of individuals and countries that would shape the music worldmap, and what people listen to.  
-We will use the [Million songs dataset](https://labrosa.ee.columbia.edu/millionsong/).  
-We listen to a lot of music every day, but perhaps we forget that music has been shaped by history. Maybe there was a battle of influences between genres that has evolved through time ?  
-What country has succeeded in influencing the others ? Who were the influencers ? These are just some of the many questions that we ask ourselves. We will answer these questions and many others by providing a interactive map to visualize many aspects of music around the world through time (proeminent genres per country, evolution of loudness, danceability around the world...). We will also study other aspects of music such as the kind of topics sung around the world and how they evolved through time.  
-This analysis aims to cast a new eye on the evolution of music through time and space.  
+Have you ever wondered how did music evolve through time and space ? From the drums in the roman army motivating the soldiers to face death for the greatness of Rome, to the catchy electronic music we can hear today on the radio, a lot happened. Today with the democratization of the internet, portable music devices and communication tools, it has become even easier to share music. From 1920 to today, many new music genres emerged. Some close to each other, they all influence one and another to create this very diverse set of different styles, each transmitting different emotions. Each music genre originating from a particular country and quickly spreading around the world, conquering the hearts of listeners without frontiers.   
+Our goal is to show you how music evolved through time between 1920 and 2010, and how each new music style spread through the world. What country has succeeded in influencing the others ? Who were the influencers ?   
+We will answer these questions by providing a interactive map to visualize many aspects of music around the world through time (proeminent genres per country). We will also study other aspects of music such as the kind of topics sung around the world and how they evolved through time.  
+This analysis aims to cast a new eye on the evolution of music through time and space. A data story as well as a the visualization of our analysis can be found on
+* datastory [ptitpet.com/ada-site](dindon.cool/ada-site)  
+* final notebook [ptitpet.com/ada/project](dindon.cool/ada/project)  
 
+We will use the [Million songs dataset](https://labrosa.ee.columbia.edu/millionsong/).
 
 
 # Research questions
 
-What is the evolution of genre and main influencers ?  
-Is there a main genre by country throughout the time ?  
-How music disperses and travels?  
-Do people like to dance and move to the beat more than before?  
-How topics are changing and spreading throughout the years?   
-Is there a meaningful change in loudness and tempo over the years?   
+
+What is the evolution of the most proeminent genre through time. What about by country ?   
+Who are the main influencers of each genre ?    
 
 # Dataset
 
 We use the [Million songs dataset](https://labrosa.ee.columbia.edu/millionsong/).  
-Especially, we want to use the artist name, tags, localization, danceability, energy, loundness, tempo.
+Particularly, we mainly use the following features of the dataset: the track name, the year it came out, the artist name and its location, tags of the song and the list of similar artists.  
 
-We want to use the familiarity to detect influencers.
+In order to analyze the genre we focus on the tag list that is provided with the main metadata set. We do not make use of  external datasets such as the tagtraum dataset (genre) and musiXmatch (lyrics) because it would reduce our number of songs to 57 000 songs which is not enough to create a world map evoluting in space.
 
-There is a lot of annotations that come with this dataset such as the tagtraum dataset (genre) and musiXmatch (lyrics), which we will use to enrich the dataset.
-
-We expect to have more data on the US than for the rest of the world and that could be a problem for a world scale study, but there still is some data for a lot of countries and we can put a focus on the propagation inside the US.
-In order to strenghten this analysis, we plotted the distribution of the artist-countries for only 1% of the data chosen randomly.
+We use the full dataset for every analysis we do, running them on the cluster. This allow us to get more statiscally relevant results and better represent countries that don't have many songs from.
 
 
-![alt text](https://github.com/ben2034/ada-private/blob/master/pace/musics%20per%20countries%20(subset).png)
-
-
-This confirms the previous hypothesis.
-
-
-# A list of internal milestones up until project milestone 2
-
-Fetch and clean the million songs dataset.  
-Exploratory analysis of dataset and visualize the distribution of data.
-Discuss and support the completion of our research questions.   
-Construction of a detailed pipeline.  
-Have some insights in the correlation of different parameters such as tempo with danceability.  
-
-# Questions for TAa
-Given that the data is mainly focussing on the usa, should we restrict our analysis to the USA or would it still be relevant to use this dataset for the entire world? Should we scrape more data from other countries..?
+# Contributions:
+Adrian Pace : participation in the design of the all algorithms we use, tags analysis in Milestone 2, dataset parsing, tags clustering, offline reverse geocoding (latitude, longitude to countries), data processing and computation in the cluster for the vizualizations (minor tags to main tags, finding best tags per countries per time period, finding best tags per time period, color assignments to countries), contributions to Louis' modified pageRank system, data story writing.  
+Louis Baligand : participation in the design of the all algorithms we use, artists similarity analysis in milestone 2, implementation of the pageRank algorithm on the subset using networkx and on the cluster with spark, data story writing.  
+Benjamin Schloesing : participation in the design of the all algorithms we use, exploratory analysis of the dataset (features analysis, correlation analysis and key analysis) in milestone 2. Webpage and vizualisation design and implementation using Javascript, D3 and html. Scripts implementation to convert json results from the cluster to JS compatible jsons. Artists portraits download and matching, color assignments to countries.  
